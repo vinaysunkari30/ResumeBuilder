@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* ─── Custom Design Tokens ─────────────────────────────────────────── */
+/* Custom Design Tokens */
 @theme {
   --color-brand-50: #eef2ff;
   --color-brand-100: #e0e7ff;
@@ -22,7 +22,7 @@
   --font-mono: 'JetBrains Mono', 'Consolas', monospace;
 }
 
-/* ─── Base Reset ───────────────────────────────────────────────────── */
+/* Base Reset */
 *,
 *::before,
 *::after {
@@ -49,7 +49,7 @@ body {
 }
 
 
-/* ─── Custom Scrollbar ─────────────────────────────────────────────── */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -68,7 +68,7 @@ body {
   scrollbar-width: none;
 }
 
-/* ─── Print Styles ─────────────────────────────────────────────────── */
+/* Print Styles */
 @media print {
   body {
     margin: 0;
@@ -102,7 +102,7 @@ body {
   }
 }
 
-/* ─── Glassmorphism utility ────────────────────────────────────────── */
+/* Glassmorphism utility */
 .glass {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(16px);
@@ -117,18 +117,18 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ─── Smooth transitions ───────────────────────────────────────────── */
+/* Smooth transitions */
 .transition-all-smooth {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ─── Form input focus glow ────────────────────────────────────────── */
+/* Form input focus glow */
 .input-glow:focus {
   outline: none;
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
 }
 
-/* ─── Tag pill animations ──────────────────────────────────────────── */
+/* Tag pill animations */
 .tag-pill {
   display: inline-flex;
   align-items: center;
@@ -140,7 +140,7 @@ body {
   transition: all 0.15s ease;
 }
 
-/* ─── Template preview fade ────────────────────────────────────────── */
+/* Template preview fade */
 .template-fade-in {
   animation: fadeIn 0.3s ease;
 }
@@ -157,19 +157,19 @@ body {
   }
 }
 
-/* ─── Section collapse animation ──────────────────────────────────── */
+/* Section collapse animation */
 .section-collapse {
   overflow: hidden;
   transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1),
     opacity 0.3s ease;
 }
 
-/* ─── Progress bar gradient ────────────────────────────────────────── */
+/* Progress bar gradient */
 .progress-gradient {
   background: linear-gradient(90deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
 }
 
-/* ─── Drag handle ──────────────────────────────────────────────────── */
+/* Drag handle */
 .drag-handle {
   cursor: grab;
 }
@@ -178,7 +178,7 @@ body {
   cursor: grabbing;
 }
 
-/* ─── Resume template base (A4 proportions) ────────────────────────── */
+/* Resume template base (A4 proportions) */
 .resume-page {
   width: 210mm;
   min-height: 297mm;

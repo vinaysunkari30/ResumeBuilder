@@ -1,4 +1,3 @@
-// Template 1: Modern Dark — two-column, dark bg, indigo accents
 export default function ModernDark({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
 

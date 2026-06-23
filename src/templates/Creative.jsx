@@ -1,4 +1,3 @@
-// Template 4: Creative — teal/coral sidebar, colorful left panel
 export default function Creative({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
 

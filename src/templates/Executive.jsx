@@ -1,4 +1,3 @@
-// Template 5: Executive — formal, navy/gold, premium single column
 export default function Executive({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
   const NAVY = '#1e3a5f'

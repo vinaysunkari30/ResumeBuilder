@@ -1,4 +1,3 @@
-// Template 8: Corporate Blue — structured, conservative, blue-gray palette
 export default function CorporateBlue({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
   const BLUE = '#2563eb'

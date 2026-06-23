@@ -1,4 +1,3 @@
-// Template 2: Classic Professional — single column, pure black & white
 export default function ClassicPro({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
 

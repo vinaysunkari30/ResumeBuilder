@@ -1,4 +1,3 @@
-// Template 3: Minimalist — ultra-clean white, thin lines, generous whitespace
 export default function Minimalist({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
 

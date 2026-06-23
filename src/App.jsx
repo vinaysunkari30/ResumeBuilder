@@ -86,9 +86,9 @@ export default function App() {
         </div>
       </div>
 
-      {/* Main content */}
+      {/* Form Panel and Preview */}
       <div className="flex flex-1 overflow-hidden md:mt-15">
-        {/* Form Panel — always visible on desktop, tab-controlled on mobile */}
+        {/* Form Panel */}
         <aside
           id="form-panel"
           className={`

@@ -1,4 +1,3 @@
-// Template 10: Elegant — serif fonts, champagne/wine colors, centered header, sophisticated
 export default function Elegant({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
   const WINE = '#7c2d52'

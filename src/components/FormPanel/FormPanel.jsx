@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import { User, Briefcase, GraduationCap, Wrench, FolderGit2, RotateCcw, Sparkles, Award, ChevronDown, ChevronUp } from 'lucide-react'
-import { demoData, emptyData } from '../../data/demoData'
-import { useLocalStorage } from '../../hooks/useLocalStorage'
 import PersonalInfo from './PersonalInfo'
 import SummaryForm from './SummaryForm'
 import ExperienceForm from './ExperienceForm'

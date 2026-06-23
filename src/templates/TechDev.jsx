@@ -1,4 +1,3 @@
-// Template 6: Tech/Developer — terminal-inspired, green on dark, monospace
 export default function TechDev({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
   const GREEN = '#4ade80'

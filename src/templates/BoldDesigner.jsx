@@ -1,4 +1,3 @@
-// Template 7: Bold Designer — big typography, hot pink accents, visual hierarchy
 export default function BoldDesigner({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
   const PINK = '#db2777'

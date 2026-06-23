@@ -1,4 +1,3 @@
-// Template 9: Compact — info-dense two-column, maximum information in minimum space
 export default function Compact({ data }) {
   const { personal = {}, summary, experience = [], education = [], skills = {}, projects = [], certifications = [] } = data
 
