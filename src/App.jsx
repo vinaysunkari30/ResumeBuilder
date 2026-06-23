@@ -71,20 +71,6 @@ export default function App() {
           </button>
         ))}
       </div>
-      <div className='flex justify-center items-center'>
-        <a href="https://digitalheroesco.com" target="_blank" rel="noopener noreferrer" className='absolute bottom-15 z-50 rounded-2xl animate-bounce btn-shadow'>
-          <button className={`bg-emerald-400 px-3 text-sm font-semibold py-3 rounded-2xl text-white cursor-pointer md:text-[16px]`}>Built for Digital Heroes</button>
-        </a>
-      </div>
-      <div className='flex justify-center items-center px-10'>
-        <div className='flex justify-center items-center gap-4 absolute z-50 bottom-33.5 py-2.5 px-3 bg-cyan-600 rounded-2xl'>
-          <h1 className={`text-sm text-white font-semibold md:text-md`}>Vinay Sunkari</h1>
-          <div className='border border-1.5 h-6 border-emerald-200'></div>
-          <a href="mailto:sunkarivinay68@gmail.com" target="_blank" className='rounded-2xl'>
-            <button className='text-sm font-semibold rounded-xl text-white cursor-pointer md:text-md mb-1'>sunkarivinay68@gmail</button>
-          </a>
-        </div>
-      </div>
 
       {/* Form Panel and Preview */}
       <div className="flex flex-1 overflow-hidden md:mt-15">

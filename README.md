@@ -74,5 +74,3 @@ http://localhost:5173
 6. **Download PDF** — Click the "Download PDF" button in the navbar to save your resume
 7. **Reset** — Click "Reset" twice to clear all data and start fresh
 
-
-> 💡 *Built with ❤️ for Digital Heroes — empowering careers one resume at a time.*
