@@ -67,7 +67,7 @@ export default function EducationForm({ data, onChange, darkMode }) {
                       onChange={(e) => set(i, key, e.target.value)}
                       placeholder={placeholder}
                       className={`w-full bg-slate-800/60 border border-slate-700 rounded-lg px-3 py-2 text-sm 
-                        text-slate-100 placeholder-slate-600 focus:outline-none ${darkMode ? 'bg-slate-800/40' : 'bg-slate-800/80'}
+                        text-slate-100 focus:outline-none ${darkMode ? 'bg-slate-800/40 placeholder-slate-600' : 'bg-slate-800/80 placeholder-slate-400'}
                         focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all duration-150`}
                     />
                   </div>
@@ -87,8 +87,8 @@ export default function EducationForm({ data, onChange, darkMode }) {
                         set(i, 'highlights', next)
                       }}
                       placeholder="e.g. Dean's List, Summa Cum Laude..."
-                      className={`flex-1 bg-slate-800/60 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-600
-                        ${darkMode ? 'bg-slate-800/40' : 'bg-slate-800/80'} focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all`}
+                      className={`flex-1 bg-slate-800/60 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100
+                        ${darkMode ? 'bg-slate-800/40 placeholder-slate-600' : 'bg-slate-800/80 placeholder-slate-400'} focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all`}
                     />
                     <button
                       onClick={() => set(i, 'highlights', edu.highlights.filter((_, idx) => idx !== hi))}

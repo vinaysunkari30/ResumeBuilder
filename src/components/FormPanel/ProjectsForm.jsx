@@ -68,8 +68,8 @@ export default function ProjectsForm({ data, onChange, darkMode }) {
                     onChange={(e) => set(i, key, e.target.value)}
                     placeholder={placeholder}
                     className={`w-full border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100
-                    placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all
-                    ${darkMode ? 'bg-slate-800/40' : 'bg-slate-800/80'}`}
+                    focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all
+                    ${darkMode ? 'bg-slate-800/40 placeholder-slate-600' : 'bg-slate-800/80 placeholder-slate-400'}`}
                   />
                 </div>
               ))}
@@ -81,7 +81,7 @@ export default function ProjectsForm({ data, onChange, darkMode }) {
                   onChange={(e) => set(i, 'description', e.target.value)}
                   placeholder="What the project does and your role in it..."
                   rows={3}
-                  className={`${darkMode ? 'bg-slate-800/40' : 'bg-slate-800/80'} w-full border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all resize-none`}
+                  className={`${darkMode ? 'bg-slate-800/40 placeholder-slate-600' : 'bg-slate-800/80 placeholder-slate-400'} w-full border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all resize-none`}
                 />
               </div>
 
@@ -105,8 +105,8 @@ export default function ProjectsForm({ data, onChange, darkMode }) {
                     onKeyDown={(e) => e.key === 'Enter' && addTech(i, proj.id)}
                     placeholder="React, Node.js, PostgreSQL..."
                     className={`flex-1 border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100
-                    placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all
-                    ${darkMode ? 'bg-slate-800/60' : 'bg-slate-200 text-slate-900'}`}
+                    focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all
+                    ${darkMode ? 'bg-slate-800/60 placeholder-slate-600' : 'bg-slate-200 text-slate-900 placeholder-slate-400'}`}
                   />
                   <button
                     onClick={() => addTech(i, proj.id)}

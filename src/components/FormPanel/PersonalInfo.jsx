@@ -60,14 +60,14 @@ export default function PersonalInfo({ data, onChange, darkMode }) {
           <label className={`block text-sm font-semibold ${darkMode? "text-slate-400": "text-slate-800"} mb-1`}>{label}</label>
           <div className="relative">
             {Icon && (
-              <Icon size={14} className={`absolute left-3 top-1/2 -translate-y-1/2 ${darkMode? 'text-slate-400': 'text-white'} pointer-events-none`} />
+              <Icon size={14} className={`absolute left-3 top-1/2 -translate-y-1/2 ${darkMode? 'text-slate-400': 'text-slate-400'} pointer-events-none`} />
             )}
             <input
               type="text"
               value={data[key] || ''}
               onChange={handle(key)}
               placeholder={placeholder}
-              className={`w-full ${darkMode? 'bg-slate-800/60': 'bg-slate-700/90'} border border-slate-700 rounded-lg py-2 pr-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all duration-150 ${Icon ? 'pl-9' : 'pl-3'}`}
+              className={`w-full ${darkMode? 'bg-slate-800/60 placeholder-slate-600': 'bg-slate-700/90 placeholder-slate-400'} border border-slate-700 rounded-lg py-2 pr-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all duration-150 ${Icon ? 'pl-9' : 'pl-3'}`}
             />
           </div>
         </div>

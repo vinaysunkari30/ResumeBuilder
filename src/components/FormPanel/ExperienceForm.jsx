@@ -52,7 +52,7 @@ function BulletList({ bullets, onChange, darkMode }) {
             onKeyDown={(e) => handleKey(e, i)}
             placeholder="Describe an achievement with measurable impact..."
             rows={2}
-            className={`flex-1 ${darkMode ? 'bg-slate-800/60': 'bg-slate-800/90'} border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all duration-150 resize-none`}
+            className={`flex-1 ${darkMode ? 'bg-slate-800/60 placeholder-slate-600': 'bg-slate-800/90 placeholder-slate-400'} border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all duration-150 resize-none`}
           />
           {bullets.length > 1 && (
             <button
@@ -128,7 +128,7 @@ function ExpCard({ exp, index, onUpdate, onRemove, onMove, total, darkMode }) {
                   value={exp[key] || ''}
                   onChange={(e) => set(key, e.target.value)}
                   placeholder={placeholder}
-                  className={`w-full ${darkMode ? 'bg-slate-800/40' : 'bg-slate-800/80'} border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-600
+                  className={`w-full ${darkMode ? 'bg-slate-800/40 placeholder-slate-600' : 'bg-slate-800/80 placeholder-slate-400'} border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100
                    focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all duration-150`}
                 />
               </div>
@@ -141,7 +141,7 @@ function ExpCard({ exp, index, onUpdate, onRemove, onMove, total, darkMode }) {
                 onChange={(e) => set('endDate', e.target.value)}
                 placeholder="Dec 2024"
                 disabled={exp.current}
-                className={`w-full ${darkMode? 'bg-slate-800/40': 'bg-slate-800/80'} border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all duration-150 disabled:opacity-40`}
+                className={`w-full ${darkMode? 'bg-slate-800/40 placeholder-slate-600': 'bg-slate-800/80 placeholder-slate-400'} border border-slate-700 rounded-lg px-3 py-2 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500/40 transition-all duration-150 disabled:opacity-40`}
               />
             </div>
           </div>
